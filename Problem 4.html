@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const book1 = {
+        name: "As a Man Thinketh",
+        author: "Jemes Alen",
+        price: 100,
+      };
+
+      const book2 = {
+        name: "Da Vinchi Code",
+        author: "Dan Brown",
+        price: 350,
+      };
+
+      const books = [book1, book2];
+
+      console.log("Using loop -");
+      for (let i = 0; i < books.length; i++) {
+        console.log("Book " + (i + 1) + " details:");
+        console.log("Name: " + books[i].name);
+        console.log("Author: " + books[i].author);
+        console.log("Price: " + books[i].price) + "Taka";
+        console.log("");
+        console.log("");
+      }
+      console.log("Using Array Method - ");
+      books.forEach((book) => {
+        console.log("Book Name:", book.name);
+        console.log("Author:", book.author);
+        console.log("Price:", book.price + "Taka");
+        console.log("");
+        console.log("");
+      });
+    </script>
+  </body>
+</html>
